@@ -10,113 +10,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
     <img src="../assets/img/dezembro.jpg" class="img-fluid" />
 
-    <ion-item>
-      <ion-badge color="light" >02 a 06</ion-badge> 
+    <ion-item *ngFor= "let dezembro of listadezembro">
+      <ion-badge color="light" >{{dezembro.dia}}</ion-badge> 
       <ion-label class="texto">
-          <blockquote>Renovação de Matrícula<p class="texto">2º Semestre</p></blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >02</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Reunião da Direção com Equipe<p class="texto">Pedagogico-Administrativo</p></blockquote>
+          <blockquote [innerHtml]="dezembro.desc"></blockquote>
       </ion-label>
     </ion-item>
     
     
-    <ion-item>
-      <ion-badge color="light" >07</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Reunião de Planejamento</blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >09 a 10</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Entrega dos Resultados Finais<p class="texto">2º Bimestre</p></blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >09 a 10</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Entrega dos Resultados Finais<p class="texto">4º Bimestre</p></blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >09</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Reunião da Direção com Equipe<p class="texto">Pedagogico-Administrativo</p></blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >12</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Fim das Aulas 2º Semestre</blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >13</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Conselho de Classe Final</blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >14</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Reunião de Planejamento</blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >16</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Divulgação de Resultados do <p class="texto">4º Bimestre</p></blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >16</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Divulgação de Resultados do <p class="texto">2º Bimestre</p></blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >16</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Atribuição de Aulas</blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >16 a 26</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Período de Solicitação de<p class="texto">Reconsiderações/Reclassificações Final </p></blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >17 a 31</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Recesso Escolar</blockquote>
-      </ion-label>
-    </ion-item>
-    
-    <ion-item>
-      <ion-badge color="light" >25</ion-badge> 
-      <ion-label class="texto">
-          <blockquote>Feriado Nacional - Natal</blockquote>
-      </ion-label>
-    </ion-item>
-
 </ion-content>
