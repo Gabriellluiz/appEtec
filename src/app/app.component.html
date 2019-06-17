@@ -1,0 +1,37 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu>
+      <ion-header>
+        <ion-toolbar color="azul">
+          <ion-title>
+            <blockquote>Etec Barra Bonita</blockquote>
+          </ion-title>
+          <ion-text class="fonte-texto">Menu</ion-text>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-label>Notificação</ion-label>
+            <ion-toggle (ngModel)="pepperoni"></ion-toggle>
+          </ion-item>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-item href="https://nsa.cps.sp.gov.br/" target="_blank">
+            <ion-icon slot="start" name="open"></ion-icon>
+            <ion-label>Sistema - NSA</ion-label>
+          </ion-item>
+
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

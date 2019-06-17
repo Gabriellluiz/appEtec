@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="vermelho">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="start" routerLink="/home">
+      <ion-icon name="arrow-round-back" class="fonte"></ion-icon>
+    </ion-buttons>
+
+    <ion-title>Etec Barra Bonita</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+
+  <ion-img [src]="descricao.img"></ion-img>
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>{{descricao.titulo}}</ion-card-title>
+      <ion-card-subtitle>{{descricao.subtitulo}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p [innerHtml]="descricao.desc"></p>
+    </ion-card-content>
+  </ion-card>
+
+  
+
+  <div class="espaco-acima1"></div>
+  <ion-button expand="block" class="botao" href="/not2">
+    <ion-icon slot="end" name="arrow-round-forward"></ion-icon>
+    Próximo
+  </ion-button>
+  <div class="espaco-acima"></div>
+
+
+</ion-content>

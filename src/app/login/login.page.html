@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="vermelho">
+      
+    <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        
+        <ion-buttons slot="start" routerLink="/home">
+          <ion-icon name="arrow-round-back" class="fonte"></ion-icon>
+        </ion-buttons>
+
+    <ion-title>Login do ADM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+
+    <ion-card>
+        <ion-card-content>
+            <p>Área de Gerenciamento de Noticias</p>
+            <ion-item>
+                <ion-label position="floating">Usuário</ion-label>
+                <ion-input type="text" maxlength=10></ion-input>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label position="floating">Senha</ion-label>
+                  <ion-input type="password" maxlength=10></ion-input>
+                </ion-item>
+                
+        </ion-card-content>
+
+        <ion-button expand="block" fill="outline" color="vermelho" href="cadastro-noticia">Entrar</ion-button>
+      </ion-card>
+
+  
+</ion-content>
